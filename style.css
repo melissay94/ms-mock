@@ -1,0 +1,31 @@
+header, main {
+    margin: 0 5%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.left-navigation a, .right-navigation a {
+    color: #262626;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 8px;
+    margin: 4px 4px 0px 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.left-navigation a:hover, .right-navigation a:hover {
+    border-bottom: 2px solid #262626;
+}
+
+.logo {
+    width: 150px;
+}
