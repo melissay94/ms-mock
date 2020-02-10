@@ -10,7 +10,7 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body class="container-fluid">
-        <header>
+        <header id="header-fullpage">
             <div class="left-navigation">
                 <img class="logo" src="img/landscape_logo.png" alt="Logo"/>
                 <nav class="nav">
@@ -118,6 +118,38 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+        </header>
+        <header id="header-responsive">
+            <div class="responsive-left">
+                <div class="dropdown">
+                    <button type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="dropdown-menu collapse-menu">
+                        <a class="nav-link" href="#">Mountains</a>
+                        <a class="nav-link" href="#">Lakes</a>
+                        <a class="nav-link" href="#">Deserts</a>
+                        <a class="nav-link" href="#">Forests</a>
+                        <a class="nav-link" href="#">Plains</a>
+                        <a class="nav-link" href="#">Beaches</a>
+                    </div>
+                </div>
+                <a class="nav-link">
+                    <span class="right-nav-title">Search</span>
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <img class="logo" src="img/landscape_logo.png" alt="Logo"/>
+            <div class="responsive-right">
+                <a class="nav-link">
+                    <span class="right-nav-title">Shop</span>
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a class="nav-link">
+                    <span class="right-nav-title">Sign In</span>
+                    <i class="fas fa-user-plus"></i>
+                </a>
             </div>
         </header>
         <main>

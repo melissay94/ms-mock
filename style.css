@@ -14,16 +14,16 @@ header {
     justify-content: space-between;
 }
 
+#header-responsive {
+    display: none;
+}
+
 .left-navigation {
     display: flex;
     align-items: center;
 }
 
-.left-navigation .menu-icon {
-    display: none;
-}
-
-.left-navigation a, .right-navigation a {
+.left-navigation a, .right-navigation a, .collapse-menu a {
     color: #262626;
     font-size: 13px;
     padding: 0px 8px;
@@ -31,7 +31,7 @@ header {
     border-bottom: 2px solid transparent;
 }
 
-.left-navigation a:hover, .right-navigation a:hover {
+.left-navigation a:hover, .right-navigation a:hover, .collapse-menu a:hover {
     border-bottom: 2px solid #262626;
 }
 
@@ -63,6 +63,18 @@ header {
 
 .multi-column-dropdown li a:hover {
     text-decoration: none;
+}
+
+#dropdownMenuButton {
+    background: transparent;
+    border: none;
+}
+
+.responsive-left, .responsive-right {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .carousel-item {
@@ -229,6 +241,14 @@ header {
     
     #caption-2 {
         top: 55%;
+    }
+
+    #header-fullpage {
+        display: none;
+    }
+
+    #header-responsive {
+        display: flex;
     }
 }
 
