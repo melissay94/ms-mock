@@ -19,6 +19,10 @@ header {
     align-items: center;
 }
 
+.left-navigation .menu-icon {
+    display: none;
+}
+
 .left-navigation a, .right-navigation a {
     color: #262626;
     font-size: 13px;
@@ -35,8 +39,37 @@ header {
     width: 150px;
 }
 
+.dropdown-menu.columns-3 {
+    min-width: 600px;
+    left: -180px;
+}
+
+.dropdown-menu.columns-3 .row {
+    margin-bottom: 20px;
+}
+
+.multi-column-dropdown {
+    list-style: none;
+}
+
+.multi-column-dropdown .dropdown-col-title {
+    font-weight: 700;
+}
+
+.multi-column-dropdown li a{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.multi-column-dropdown li a:hover {
+    text-decoration: none;
+}
+
+.carousel-item {
+    height: 65vh;
+}
 .carousel-item img {
-    height: 100vh;
+    height: 100%;
 }
 
 .jumbotron, .carousel-content {
@@ -79,17 +112,28 @@ header {
 }
 
 .offers-group {
-    margin-top: 48px;
     margin-bottom: 48px;
 }
 
+.offers-group.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.offer {
+    width: 25%;
+}
+
 .img-holder {
-    height: 250px;
+    margin-top: 48px;
+    width: 100%;
+    max-height: 190px;
     vertical-align: middle;
 }
 
 .offer img {
     width: 100%;
+    height: 100%;
     display: block;
 }
 
@@ -133,4 +177,58 @@ header {
 
 .social-media .fa-linkedin-square {
     color: #0E76A8;
+}
+
+@media only screen and (max-width: 1200px) {
+    header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .right-nav-title {
+        display: none;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .img-holder {
+        max-height: 150px;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+
+    .offer.col-sm-3 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .img-holder {
+        max-height: 220px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .offer.col-sm-3 {
+        flex: initial;
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: 25px;
+    }
+
+    .img-holder {
+        max-height: 355px;
+    }
 }
